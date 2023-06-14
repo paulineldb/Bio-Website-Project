@@ -1,0 +1,209 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* ----- LINKS ----- */
+a {
+    color: #76C2C5;
+}
+
+a:hover{
+    text-shadow: 1px 1px 5px #202020;
+}
+
+
+/* ----- FONTS ----- */
+h1 {
+    font-family: 'Abel', sans-serif;
+    color: #35A551;
+    font-size: 50px;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Abel', sans-serif;
+    color: #465D93;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-family: Tahoma, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    color: #202020;
+    text-align: center;
+}
+
+p {
+    font-family: Tahoma, sans-serif;
+    text-align: justify;
+    margin-top: 10px;
+}
+
+li {
+    font-family: Tahoma, sans-serif;
+}
+
+/* ----- BODY ----- */
+body {
+    background-color: #DEFDE0;
+}
+
+
+/* ----- HEADER ----- */
+
+header {
+    height: 130px;
+    width: 100%;
+    background-color: #465D93;
+    display: grid;
+    grid-template: 1fr / 1fr 3fr;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: fit-content;
+    margin-left: 50px;
+}
+
+#logo-image {
+    height: 100px;
+    width: auto;
+    border-radius: 100%;
+    filter: grayscale(90%);
+}
+
+#logo-image:hover {
+    cursor: default;
+    transform: rotate(360deg);
+    transition: all 0.7s ease-in-out 0s;
+}
+
+.nav {
+    justify-self: end;
+    margin-right: 50px;
+}
+
+
+.nav-links li {
+    display: inline;
+    margin-left: 40px;
+}
+
+.nav-links li a {
+    font-size: 28px;
+    text-decoration: none;
+    color: #FFFDF8;
+    font-family: 'Abel', sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.nav-links li a:hover {
+    font-size: 30px;
+}
+
+
+/* ----- MAIN ----- */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px 40px;
+}
+
+/* ----- home page ----- */
+#hero-img {
+    display: block;
+    max-width: 400px;
+    margin: 20px auto;
+    border: solid 10px #465D93;
+    border-radius: 5%;
+    box-shadow: 0px 0px 10px 0px #465D93;
+}
+
+.video {
+    display: none;
+}
+
+.displayInline{
+    display: block;
+    margin: 5px auto;
+}
+
+/* ----- Metamorphosis page ----- */
+.if-section {
+    margin: 10px auto;
+    display: flex;
+    max-width: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.if-text {
+    margin: auto 0;
+    max-width: 320px;
+}
+
+.reveal-answer {
+    display: none;
+    color: #465D93;
+    font-style: italic;
+}
+
+.if-img {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.if-img img {
+    width: 100px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 100%;
+    filter: blur(5px) grayscale(100%);
+}
+
+
+button {
+    display: block;
+    margin: 50px auto 0px auto;
+    padding: 0 10px;
+    height: 30px;
+    border-radius: 10px;
+    font-size: 20px;
+    border: none;
+    background-color: #35A551;
+    color: #FFFDF8;
+    font-family: 'Abel', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+button:hover {
+    box-shadow: 2px 2px 0px 1px #465D93;
+}
+
+button:active {
+    box-shadow: none;
+    position: relative;
+    top: 2px;
+    left: 2px;
+}
+
+/* ----- FOOTER -----*/
+footer {
+    margin-top: 2%;
+    padding: 2%;
+    height: fit-content;
+    background-color: #465D93;
+}
+footer p {
+    font-size: 14px;
+    color: #FFFDF8;
+    text-align: center;
+}
